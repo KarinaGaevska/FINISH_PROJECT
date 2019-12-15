@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: "Arial", serif;
+}
+body{
+    background: linear-gradient(to bottom, #f9fafc, #ebbfe6), no-repeat;
+    position: relative;
+    min-width: 1200px;
+}
+.visible{
+    display: block !important;
+}
+.block{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(218, 224, 248);
+}
+main{
+    position: relative;
+}
+.content{
+    width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 150px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.most-common{
+  margin-bottom: 10px;
+}
+.filter{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(224, 100, 100);
+    border: 1px solid rgb(202, 39, 39);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.filter:hover{
+    opacity: 0.5;
+}
+.wrap-filter{
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid grey;
+    padding: 20px 10px;
+}
+.inner-filter{
+    display: none;
+}
+
+.in-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.style-meaning{
+    width: 40px;
+    height: 20px;
+    border:1px solid black;
+    text-align: center;
+}
+
+.in-form p {
+  margin-top: 15px;
+}
+.applied,
+.reset{
+    width: 80%;
+    padding: 8px 12px;
+    background-color: rgb(240, 131, 131);
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.applied {
+  background-color: rgb(64, 182, 79);
+  margin-top: 40px;
+}
+table{
+    background: rgb(243, 240, 240);
+    text-align: center;
+    border-spacing: 0;
+}
+td{
+    border-top: 2px solid rgb(150, 145, 145);
+    font-weight: normal;
+    height: 20px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+tr:hover{
+    background-color: rgb(243, 238, 167);
+}
+/* .yelloy{
+    background-color: rgb(235, 241, 146);
+} */
+.title-table{
+    background-color: rgb(173, 233, 104);
+
+}
+.post{
+    margin: 0 auto;
+    background: rgb(206, 202, 202);
+    width: 70%;
+    margin-bottom: 15px;
+}
+.sort-by {
+  cursor: pointer;
+}
+.sort-by::before {
+  content: "\021E7";
+  padding-right: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.sort-by.min-to-max::before {
+  content: "\021E9";
+}

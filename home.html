@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/home.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="block"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="wrap-filter">
+        <div>
+          <button class="most-common filter">Часто використовувані</button>
+          <button class="filter">Відкрити фільтри</button>
+
+          <form class="inner-filter">
+            <div class="in-form">
+              <p>
+                <label for="enter-min">Введіть мін:</label>
+                <input class="style-meaning min-meaning" type="text" id="enter-min" maxlength="5">
+              </p>
+              <p>
+                <label for="enter-max">Введіть мін:</label>
+                <input class="style-meaning max-meaning" type="text" id="enter-max" maxlength="5">
+              </p>
+              <button class="applied" type="submit">Примінити</button>
+              <button class="reset" type="reset">Скинути фільтри</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <td colspan="5" class="title-table">Курс валют в НБУ на 10.10.2019</td>
+          </tr>
+          <tr>
+            <td class="sort-by sortByCode">Код валюти</td>
+            <td class="sort-by sortByName">Назва валюти</td>
+            <td class="sort-by sortByCourse">Курс валюти</td>
+            <td class="sort-by sortByLetter">Найменування літерами</td>
+            <td >Дата</td>
+          </tr>
+        </thead>
+        <tbody> </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/project.js"></script>
+  <script src="js/sort.js"></script>
+</body>
+
+</html>

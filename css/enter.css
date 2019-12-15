@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: "Arial", serif;
+}
+html {
+  height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+.bg{
+    background: rgb(245, 243, 243);
+    opacity: 0.5;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.popup{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 70px;
+  background: linear-gradient(to bottom, #7d99f3, #d871cf);
+  border-radius: 15%;
+  border: 1px solid rgb(230, 230, 235);
+}
+.enter_fields,
+.registration_fields,
+.registration_error
+.enter_error{
+    display: none;
+}
+.visible{
+    display: block !important;
+}
+.row{
+  margin-bottom: 15%;
+}
+.row:last-child{
+  margin-bottom: 0;
+}
+form {
+  display: block;
+  width: 100%;
+}
+label{
+    font-size: 18px;
+}
+.field-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.enter, .registration, .row span{
+  font-size: 26px;
+  color: #000;
+  background: transparent;
+  font-weight: bold;
+}
+.enter, .registration {
+  cursor: pointer;
+}
+.field{
+  padding: 7px 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.field.error{
+    border-color: red;
+}
+.btn_enter, .btn_registration{
+    display: block;
+    padding: 15px 45px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(77, 78, 117);
+    background-color: rgba(123, 142, 226, 0.4);
+    box-shadow:0px 1px 14px rgba(43, 42, 42, 0.4);
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.enter:hover, .registration:hover {
+  color: #534d2a;
+}
+
+
+

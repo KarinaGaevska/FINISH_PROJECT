@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project</title>
+  <link rel="stylesheet" href="css/enter.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="popup">
+    <form>
+      <div class="row">
+        <button class="enter">Вхід</button>
+        <span>/</span>
+        <button class="registration">Реєстрація</button>
+      </div>
+
+
+      <div class="enter_fields visible">
+        <div class="row field-wrap">
+          <label for="email">Email</label>
+          <input class="field" id="email" type="text">
+        </div>
+
+        <div class="row field-wrap">
+          <label for="password">Пароль</label>
+          <input class="field" id="password" type="password">
+        </div>
+
+        <div class="row">
+          <a href=""></a>
+          <!--Напомнить пароль-->
+
+          <input id="remember-me" type="checkbox">
+          <label for="remember-me">Запомнить меня</label>
+        </div>
+        <span class="enter_error"></span>
+        <button class="btn_enter" type="submit">Войти</button>
+      </div>
+
+
+      <div class="registration_fields">
+        <div class="row field-wrap">
+          <label for="reg_email">Email</label>
+          <input class="field" id="reg_email" type="text">
+        </div>
+
+        <div class="row field-wrap">
+          <label for="reg_password">Пароль</label>
+          <input class="field" id="reg_password" type="password">
+        </div>
+
+        <div class="row field-wrap">
+          <label for="check_password">Повторить пароль</label>
+          <input class="field" id="check_password" type="password">
+        </div>
+
+        <div class="row">
+          <!--Напомнить пароль-->
+          <input id="remember-me" type="checkbox">
+          <label for="remember-me">Запомнить меня</label>
+          <span class="registration_error"></span>
+          <button class="btn_registration" type="submit">Зарегестрироваться</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+
+  <script src="js/project.js"></script>
+</body>
+
+</html>
